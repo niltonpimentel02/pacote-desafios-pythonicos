@@ -10,9 +10,19 @@ Se o tamanho da string for menor que 3, não altere nada.
 Retorne o resultado da string.
 """
 
+
 def verbing(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    """
+    Adiciona ing ao final de string de comprimento maior ou igual a 3. se a string já terminar com ing adiciona ly.
+    param s: string
+    return: string modificada
+    """
+    if len(s) >= 3:
+        if s[-3:] != 'ing':
+            s += 'ing'
+        else:
+            s += 'ly'
+    return s
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

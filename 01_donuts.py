@@ -9,9 +9,13 @@ Exemplo: donuts(5) retorna 'Number of donuts: 5'
 e donuts(23) retorna 'Number of donuts: many'
 """
 
+
 def donuts(count):
-    # +++ SUA SOLUÇÃO +++
-    return
+    """
+    parm count: int
+    retunr:string com a quantidade de donuts.r
+    """
+    return f'Number of donuts: {count}' if count < 10 else 'Number of donuts: many'
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

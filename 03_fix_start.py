@@ -13,9 +13,15 @@ Dica: s.replace(stra, strb) retorna uma versão da string s
 onde todas as instancias de stra foram substituidas por strb.
 """
 
+
 def fix_start(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    """
+    Verifica qual a primeira letra da string s e substitui todas as ocorrências dessa letra na string por um *,
+    exceto pela primeira ocorrência.
+    param s: string
+    return: Retorna uma string com * no lugar das ocorrências da nova letra.
+    """
+    return ''.join(letter if index == 0 or letter != s[0] else '*' for index, letter in enumerate(s))
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
